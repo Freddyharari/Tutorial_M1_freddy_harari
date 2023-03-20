@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ceu estrelado.png" type="Texture" id=1]
+[ext_resource path="res://Button.gd" type="Script" id=2]
+
+[node name="CeuEstrelado" type="Sprite"]
+position = Vector2( 48, 80 )
+texture = ExtResource( 1 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = -32.0
+margin_top = -48.0
+margin_right = 268.0
+margin_bottom = 107.0
+rect_rotation = -0.0476727
+text = "Nos dias de hoje, , as pessoas podem acabar se decepcionando com diversas coisas muito facilmente, e no meu  jogo eu tento demonstrar isso, fazendo com que ele ao completar o trajeto e alcancar o abacaxi chegue em uma conta matematica de um nivel levemente elevado. E ao chegar no resultado percebera que nenhuma das respostas são corretas e mesmo assim se o player não fizer as contas e chutar um resultado ele vai ser mandado de volta para o inicio do game e percebera que nao tem uma resposta certa, ficando assim decepcionado"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 160.0
+margin_top = -80.0
+margin_right = 256.0
+margin_bottom = -60.0
+text = "tela inicial"
+script = ExtResource( 2 )
+
+[connection signal="pressed" from="Button2" to="Button2" method="_on_Button2_pressed"]

@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+[ext_resource path="res://ceu estrelado.png" type="Texture" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="CeuEstrelado" type="Sprite" parent="."]
+position = Vector2( 112, 128 )
+texture = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="CeuEstrelado"]
+margin_left = -96.0
+margin_right = -28.0
+margin_bottom = 20.0
+text = "690 .166"
+
+[node name="Button2" type="Button" parent="CeuEstrelado"]
+margin_left = -16.0
+margin_right = 48.0
+margin_bottom = 20.0
+text = "567.890"
+
+[node name="Button3" type="Button" parent="CeuEstrelado"]
+margin_left = 64.0
+margin_right = 128.0
+margin_bottom = 20.0
+text = "458.985"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CeuEstrelado"]
+margin_left = -64.0
+margin_top = -96.0
+margin_right = 112.0
+margin_bottom = -32.0
+text = "          
+		       
+			876 X 789"
+
+[connection signal="pressed" from="CeuEstrelado/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="CeuEstrelado/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="CeuEstrelado/Button3" to="." method="_on_Button3_pressed"]
